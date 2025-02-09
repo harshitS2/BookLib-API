@@ -51,7 +51,23 @@ export const login = async (req, res) => {
     }
 };
 
-
+export const updateProfile = async (req, res) => {
+    const user = req.user;
+    try {
+        if (!user) return res.status(401).json({ message: 'Not authorized' });
+    const { name, email, role } = req.body;
+    const updatedUser =  await User.findOneAndUpdate(user._id,{
+        name,
+        email,
+        role
+    },{ new: true, select: "-password" } );
+    if (!updatedUser) return res.status(404).json({ message: 'User not found' });
+    res.status(200).json({ message: 'User updated successfully', user: updatedUser });
+    } catch (error) {
+       console.error("Internal error: " + error.message); 
+       res.status(401).json("Internal error: " + error.message);
+    }
+}
 export const logOut = async (req, res) => {
     res.cookie("jwt", "", { maxAge: 0 });
     res.status(200).send("Logout route");

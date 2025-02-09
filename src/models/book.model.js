@@ -19,11 +19,9 @@ const bookSchema = new mongoose.Schema({
     },
     cover_image_url:{
         type: String,
-        required: true,
     },
     published_date:{
         type: Date,
-        required: true,
     },
     created_by:{
         type: mongoose.Schema.Types.ObjectId,
