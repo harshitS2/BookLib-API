@@ -22,8 +22,8 @@ A comprehensive Book Management API built with **Node.js**, **Express**, and **M
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/book-management-api.git
-   cd book-management-api
+   git clone https://github.com/harshitS2/BookLib-API.git
+   cd BookLib-API
    ```
 
 2. Install dependencies:  
@@ -41,7 +41,7 @@ A comprehensive Book Management API built with **Node.js**, **Express**, and **M
 
 4. Start the server:  
    ```bash
-   npm start
+   npm run dev
    ```
 
    The server will run at `http://localhost:5001`
