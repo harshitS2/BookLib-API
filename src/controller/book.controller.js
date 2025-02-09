@@ -1,4 +1,5 @@
 import Book from '../models/book.model.js';
+import User from '../models/user.model.js';
 export const addBook = async (req, res) => {
     const loggedInUser = req.user;
     try {
