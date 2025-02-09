@@ -239,9 +239,6 @@ A comprehensive Book Management API built with **Node.js**, **Express**, and **M
 
 This project is licensed under the MIT License.
 
-
-Here’s the updated section with collaboration instructions:  
-
 ---
 
 ## Contribution and Collaboration  
