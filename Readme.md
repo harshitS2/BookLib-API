@@ -1,6 +1,3 @@
-Here’s the updated `README.md` with example responses:  
-
----
 
 # Book Management API  
 
@@ -205,6 +202,3 @@ A comprehensive Book Management API built with **Node.js**, **Express**, and **M
 ## License  
 This project is licensed under the MIT License.  
 
----
-
-Want me to add more examples, or should I expand any section? 😊
